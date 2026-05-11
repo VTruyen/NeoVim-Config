@@ -10,3 +10,4 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 - [markdown-toc]("hedyhli/markdown-toc.nvim")
 - [url-open]("sontungexpt/url-open")
 - [nvim-dap]("mfussenegger/nvim-dap")
+- [nvim-filediff]("sminrana/nvim-filediff")
