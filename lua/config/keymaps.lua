@@ -6,7 +6,8 @@
 local map = vim.keymap.set
 
 map("i", "jj", "<Esc>", { desc = "Esc to normal mode" })
-map("t", "jj", "<Esc><Esc>", { desc = "Esc to normal mode in terminal" })
+-- Sortir du mode terminal avec Échap (ou tout autre raccourci de ton choix)
+map("t", "jk", "<C-\\><C-n>", { desc = "Quitter le mode terminal" })
 
 -- Move Lines
 map("v", "<S-Up>", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = "Move Up" })
