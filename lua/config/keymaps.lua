@@ -17,6 +17,10 @@ map("n", "<S-Down>", "<cmd>execute 'move .+' . v:count1<cr>==", { desc = "Move D
 map("i", "<S-Down>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move Down" })
 map("v", "<S-Down>", ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc = "Move Down" })
 
+map("n", "<leader>ff", function()
+  require("telescope.builtin").find_files({ hidden = true, no_ignore = true })
+end, { desc = "Find File (Telescope)" })
+
 map("v", "S", "<Plug>(nvim-surround-visual)", {
   desc = "Add a surrounding pair around a visual selection",
 })
