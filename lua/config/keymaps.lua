@@ -25,3 +25,7 @@ map("v", "S", "<Plug>(nvim-surround-visual)", {
   desc = "Add a surrounding pair around a visual selection",
 })
 map("n", "gx", "<esc>:URLOpenUnderCursor<cr>", { desc = "Open link on line (first to left)" })
+
+map("n", "<leader>t", function()
+  require("md-table-align").align_table()
+end, { desc = "Align a markdown table" })

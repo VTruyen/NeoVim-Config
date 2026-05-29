@@ -40,4 +40,8 @@ return {
       },
     },
   },
+  {
+    "sh1Nome/md-table-align.nvim",
+    ft = "markdown", -- Lazy load on markdown filetype
+  },
 }
